@@ -18,7 +18,7 @@
   		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
   		<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-  		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+  		<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
 
   		<a href="blank.html">Равшан Джамшутович</a>
   		<a href="blank.html">Мои заказы</a>
@@ -88,40 +88,28 @@
 
 
       <!-- На будущее
+        <form>
+          <label for="cost">Цена:</label>
+          <input type="range" name="cost" id="cost" min="0" max="50000" step="100" value="30000">
 
-        <label for="cost">Цена:</label>
-        <input type="range" name="cost" min="0" max="50000" step="100" value="30000">
-
-        <label for="firm">Производители:</label>
-            <ul>  
-              <li>
-                <input type="checkbox" name="firm" value="bosch" checked>BOSCH
-              </li>
-              <li>
-                <input type="checkbox" name="firm" value="interskol">Интерскол
-              </li>
-              <li>
-                <input type="checkbox" name="firm" value="makita" checked>Makita
-              </li>
-              <li>
-                <input type="checkbox" name="firm" value="dewalt">Dewalt
-              </li>
-              <li>
-                <input type="checkbox" name="firm" value="hitachi">Hitachi
-              </li>
-            </ul>
-
-            <label for="power">Питание</label>
-            <ul>
-              <li>
-                <input type="radio" name="power" checked>Аккумуляторные
-              </li>
-              <li>
-                <input type="radio" name="power">Сетевые
-              </li>
-            </ul>
-
-        <button type="button">Показать</button>
+          <legend>Производители:</legend>
+             
+                  <input type="checkbox" name="firm" value="bosch" id="bosch" checked><label for="bosch">BOSCH</label>
+                
+                  <input type="checkbox" name="firm" value="interskol" id="interskol"><label for="interskol">Интерскол</label>
+                
+                  <input type="checkbox" name="firm" value="makita" id="makita" checked><label for="makita">Makita</label>
+                
+                  <input type="checkbox" name="firm" value="dewalt" id="dewalt"><label for="dewalt">Dewalt</label>
+                
+                  <input type="checkbox" name="firm" value="hitachi" id="hitachi"><label for="hitachi">Hitachi</label>
+              
+              <legend>Питание:</legend>
+                <input type="radio" name="power" id="accum" checked><label for="accum">Аккумуляторные</label>
+                <input type="radio" name="power" id="cord"><label for="cord">Сетевые</label>
+              
+          <button type="submit">Показать</button>
+        </form>
       
 -->
       <section>
@@ -136,6 +124,9 @@
           <li>
             <a href="blank.html">По функционалу</a>
           </li>
+        </ul>
+        
+        <ul>
           <li>
             <a href="blank.html">По возрастанию</a>
           </li>
@@ -277,7 +268,7 @@
         <a>
           <img src="https://via.placeholder.com/220x68" alt="логотип компании Техномарт">
         </a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
 
