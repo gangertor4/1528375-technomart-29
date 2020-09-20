@@ -30,6 +30,9 @@
   --insrtument-blue: #3bbce3;
   --tech-violet: #dc91d8;
   --sales-green: #8ed78f;
+
+  /*fonts*/
+  --pt-sans: "PT Sans", Arial, sans-serif;
 }
 
 .page-body {
@@ -265,7 +268,7 @@
 .popular-list,
 .catalog-goods-list {
   list-style: none;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
 }
 
 .popular-list h3,
@@ -358,7 +361,7 @@
 }
 
 .services p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
 }
@@ -393,7 +396,7 @@
 }
 
 .services-card p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
 }
@@ -407,7 +410,7 @@
 }
 
 .delivery p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
 }
@@ -427,7 +430,7 @@
 }
 
 .contacts p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
 }
@@ -444,7 +447,7 @@
 .breadcrumbs-item p {
   text-decoration: none;
   color: var(--basic-black);
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 18px;
 }
@@ -464,7 +467,7 @@
 
 .catalog-sort {
   background-color: var(--basic-violet-light);
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -514,7 +517,7 @@
 
 .catalog-page a {
   color: var(--basic-black);
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   text-transform: uppercase;
   font-size: 13px;
   line-height: 18px;
@@ -538,7 +541,7 @@
 }
 
 .catalog-about p {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
 }
