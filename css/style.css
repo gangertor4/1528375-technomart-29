@@ -38,11 +38,6 @@
   --pt-sans: "PT Sans", Arial, sans-serif;
 }
 
-.page {
-  width: 1200px;
-  height: 100%;
-}
-
 /*GRID*/
 
 .page-body {
@@ -94,7 +89,13 @@
 
 .header-search {
   width: 245px;
-  margin-left: -52px;
+  margin-left: -40px;
+  border: 0;
+  background-color: var(--darker-blue);
+}
+
+.header-search::placeholder {
+  color: var(--basic-white);
 }
 
 .header-bookmark,
@@ -107,6 +108,11 @@
 
 .header-order {
   background-color: var(--basic-green);
+  width: 150px;
+  height: 42px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 9px;
 }
 
 .header-order:hover,
@@ -236,6 +242,8 @@
 }
 
 .main-nav a {
+  display: block;
+  height: 60px;
   color: var(--basic-white);
   font-size: 18px;
   line-height: 24px;
@@ -270,12 +278,26 @@
   grid-gap: 20px;
 }
 
+.feature-item {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+}
+
 
 .feature-item p {
+  margin: 0;
   color: var(--basic-white);
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  margin-left: 23px;
 }
 
 .feature-item a {
@@ -285,6 +307,12 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  width: 135px;
+  height: 38px;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 23px;
 }
 
 .feature-item a:hover,
@@ -356,7 +384,27 @@
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 2px;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.button-all {
+  width: 192px;
   height: 38px;
+}
+
+.button-more {
+  width: 220px;
+  height: 38px;
+}
+
+.button-map {
+  width: 300px;
+  height: 38px;
+  margin-top: 25px;
 }
 
 .button:hover,
@@ -460,8 +508,6 @@
   min-height: 318px;
 }
 
-/* КНОПКИ НА ТОВАРАХ ПОКА СКРЫЛ! НЕ ЗАБУДЬ!*/
-
 .user-buy {
   display: none;
 }
@@ -508,6 +554,8 @@
   font-weight: bold;
 }
 
+/* BUY & BOOKMARK */
+
 .button-buy {
   text-decoration: none;
   color: var(--basic-white);
@@ -515,6 +563,11 @@
   border: 3px solid var(--basic-green);
   text-transform: uppercase;
   border-radius: 2px;
+  width: 135px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-buy:hover,
@@ -535,6 +588,11 @@
   background-color: var(--basic-white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
+  width: 135px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button-bookmark:hover,
@@ -575,8 +633,17 @@
 
 /* SERVICES */
 
-.services {
+.services-container {
   background-color: var(--basic-blue-light);
+  min-height: 522px;
+}
+
+.services {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 64px;
+  margin-top: 70px;
 }
 
 .services h2 {
@@ -656,6 +723,11 @@
   line-height: 24px;
 }
 
+.delivery {
+  width: 380px;
+  height: 50px;
+}
+
 .delivery-list {
   list-style: none;
   font-size: 18px;
@@ -678,6 +750,8 @@
   font-family: var(--pt-sans);
   font-size: 13px;
   line-height: 24px;
+  width: 180px;
+  height: 49px;
 }
 
 /*MAIN CATALOG*/
@@ -862,6 +936,7 @@
 
 .upper-footer-container {
   background-color: var(--dark-blue);
+  margin-top: 70px;
 }
 
 .upper-footer {
