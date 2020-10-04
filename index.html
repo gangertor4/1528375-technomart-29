@@ -17,7 +17,10 @@
         <a class="header-logo">
           <img src="img/logo-header.png" width="220" height="47" alt="логотип компании Техномарт">
         </a>
-        <input class="header-search" type="search" name="search" placeholder="Поиск">
+        <form class="search">
+          <input class="header-search" type="search" name="search" placeholder="Поиск">
+          <button class="search-button" type="submit"></button>
+        </form>
         <a class="header-bookmark" href="blank.html">Закладки: 0</a>
         <a class="header-cart" href="blank.html">Корзина: 0</a>
         <a class="header-order" href="blank.html">Оформить заказ</a>
@@ -76,20 +79,23 @@
             <p>Доставка</p>
             <a href="blank.html">Бесплатно</a>
           </div>
-          <ul class="slider">
-            <li class="slider-item">
-              <p class="slider-title">Перфораторы</p>
-              <p class="slider-slogan">Настоящие мужские игрушки</p>
-            </li>
-            <li class="slider-item">
-              <p class="slider-title">Дрели</p>
-              <p class="slider-slogan">Соседям на радость</p>
-            </li>
-          </ul>
-        </div>
-        <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
-        <button class="slider-button slider-button-back" type="button" disabled>Назад</button>
-        <button class="slider-button slider-button-next" type="button">Вперед</button>
+          <div class="slider">
+            <ul>
+              <li class="slider-item slide-current slider-item-1">
+                <p class="slider-title">Перфораторы</p>
+                <p class="slider-slogan">Настоящие мужские игрушки</p>
+              </li>
+              <li class="slider-item slider-item-2">
+                <p class="slider-title">Дрели</p>
+                <p class="slider-slogan">Соседям на радость</p>
+              </li>
+            </ul>
+            <a class="button button-catalog" href="catalog.html">Открыть каталог</a>
+            <div class="slider-control">
+              <button class="slider-button slider-button-back" type="button" disabled aria-label="Назад"></button>
+              <button class="slider-button slider-button-next" type="button" aria-label="Вперед"></button>
+            </div>
+          </div>
       </section>
       <section class="popular">
         <div class="section-title">
@@ -212,18 +218,18 @@
               <a href="blank.html">Кредит</a>
             </li>
           </ul>
-          <div class="services-card">
+          <div class="services-card services-delivery services-card-current">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
           </div>
-          <div class="services-card visually-hidden">
+          <div class="services-card services-guarantee">
             <h3>Гарантия</h3>
             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
           </div>
-          <div class="services-card visually-hidden">
+          <div class="services-card services-credit">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="button" href="blank.html">Отправить заявку</a>
+            <a class="button button-credit" href="blank.html">Отправить заявку</a>
           </div>
         </div>
     </section>
