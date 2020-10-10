@@ -17,12 +17,14 @@
   --pagination-hover: #C5C5C5;
   --social-bg: #212a3a;
   --scale-grey: #D7DCDE;
+  --btn-container-grey: #f4f4f4;
 
   /*transparent colors*/
   --transparent-white: rgba(255, 255, 255, 0.3);
   --transparent-black: rgba(0, 0, 0, 0.25);
   --transparent-grey: rgba(197, 197, 197, 0.3);
   --transparent-grey-active: rgba(169, 169, 169, 0.3);
+  --modal-shadow: rgba(0, 0, 0, 0.15);
 
   /*button actions*/
   --red-hover: #ca2c37;
@@ -381,7 +383,17 @@
 }
 
 
-/* HEADER CATALOG.html*/
+/* HEADER-CATALOG*/
+
+.header-logo {
+  width: 220px;
+  height: 47px;
+  background-image: url(../img/logo-header.png);
+}
+
+.header-logo:active {
+  background-image: url(../img/logo-header-active.png);
+}
 
 .header-cart-full::before {
   content: "";
@@ -1123,15 +1135,23 @@
   padding: 13.5px 0 17.5px 22px;
 }
 
+.services-item-current a {
+  background-color: var(--basic-white);
+  color: var(--dark-blue);
+  border-top: 2px solid var(--dark-blue);
+}
+
 .services-item a:hover,
 .services-item a:focus {
   background-color: var(--darker-blue);
 }
 
-.services-item a:active {
+/*.services-item a:active {
   background-color: var(--basic-white);
   color: var(--dark-blue);
 }
+
+*/
 
 .services-card h3 {
   color: var(--dark-blue);
@@ -1940,4 +1960,122 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+}
+
+/* MODAL */
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border-top: 7px solid var(--basic-red);
+  box-shadow: 0px 4px 20px var(--modal-shadow);
+}
+
+/*MODAL-WRITE*/
+
+.modal-write {
+  display: none;
+  width: 620px;
+  height: 430px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, var(--basic-white) 73%, var(--btn-container-grey) 73%, var(--btn-container-grey) 100%);
+  padding: 46px 80px 37px 80px;
+}
+
+.modal-write label {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.write-input::placeholder {
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 11px;
+}
+
+.form-write {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.form-top label,
+.from-top input {
+  display: block;
+  /*  width: 50%;
+*/
+}
+
+/*.form-top-block {
+  width: 50%;
+}
+
+.form-top-block label {
+  display: block;
+}*/
+
+.form-top input {
+  width: 220px;
+  height: 38px;
+  box-sizing: border-box;
+  margin-top: 11px;
+  border: 2px solid var(--pagination-hover);
+}
+
+.form-top label:first-child {
+  margin-right: 20px;
+}
+
+.form-write textarea {
+  width: 460px;
+  height: 114px;
+  box-sizing: border-box;
+  border: 2px solid var(--pagination-hover);
+  ;
+}
+
+.button-write {
+  border: none;
+  width: 460px;
+  height: 38px;
+  padding-bottom: 9px;
+  margin-top: 67px
+}
+
+.modal-close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 21px;
+  right: 11px;
+  cursor: pointer;
+}
+
+/*MODAL-MAP*/
+
+.modal-map {
+  width: 943px;
+  height: 449px;
+  display: none;
+}
+
+.modal-map iframe {
+  border: none;
+  width: 100%;
 }

@@ -208,7 +208,7 @@
         <p class="services-title">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-choose">
           <ul class="services-slider">
-            <li class="services-item">
+            <li class="services-item services-item-current">
               <a href="blank.html">Доставка</a>
             </li>
             <li class="services-item">
@@ -328,6 +328,27 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-write">
+    <form class="form-write" method="get" action="https://echo.htmlacademy.ru">
+      <div class="form-top">
+        <!-- <div class="form-top-block"> -->
+        <label for="your-name">Ваше имя:<input class="write-input" type="text" id="your-name" placeholder="Имя Фамилия"></label>
+        <!-- </div> -->
+        <!-- <div class="form-top-block"> -->
+        <label for="email">Ваш e-mail:<input class="write-input" type="text" id="email" placeholder="email@example.com"></label>
+        <!-- </div> -->
+      </div>
+      <label for="message">Текст письма:</label>
+      <textarea class="write-input" id="message" placeholder="В свободной форме"></textarea>
+      <button class="button button-write" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть окно обратной связи"></button>
+  </section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123625!2d30.3208946155902!3d59.93879686904851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602330294831!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть окно карты"></button>
+  </section>
 </body>
 
 </html>
