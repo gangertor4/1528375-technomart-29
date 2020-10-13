@@ -388,11 +388,13 @@
 .header-logo {
   width: 220px;
   height: 47px;
-  background-image: url(../img/logo-header.png);
+  background-image: url(../img/logo-normal-header.png);
 }
 
 .header-logo:active {
-  background-image: url(../img/logo-header-active.png);
+  width: 220px;
+  height: 47px;
+  background-image: url(../img/logo-active-header.png);
 }
 
 .header-cart-full::before {
@@ -1065,6 +1067,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.brand-item:hover,
+.brand-item:focus {
+  box-shadow: 0 0 10px 0 var(--transparent-black);
+}
+
+.brand-item a:active {
+  opacity: 0.3;
 }
 
 /* SERVICES */
