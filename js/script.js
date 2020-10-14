@@ -25,7 +25,9 @@ window.addEventListener("keydown", function(evt) {
 let writeOpen = document.querySelector(".button-map");
 let modalWrite = document.querySelector(".modal-write");
 let modalWriteClose = modalWrite.querySelector(".modal-close");
-let enterLogin = modalWrite.querySelector(".write-input");
+let formWrite = modalWrite.querySelector(".form-write");
+let enterLogin = modalWrite.querySelector(".write-login");
+let enterEmail = modalWrite.querySelector(".write-email");
 
 writeOpen.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -33,10 +35,18 @@ writeOpen.addEventListener("click", function(evt) {
   enterLogin.focus();
 });
 
+formWrite.addEventListener("submit", function(evt) {
+  evt.preventDefault();
+  if (!enterEmail.value) {
+    modalWrite.classList.add("modal-error");
+  }
+});
+
 
 modalWriteClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   modalWrite.classList.remove("modal-show");
+  modalWrite.classList.remove("modal-error");
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -44,6 +54,7 @@ window.addEventListener("keydown", function(evt) {
     if (modalWrite.classList.contains("modal-show")) {
       evt.preventDefault();
       modalWrite.classList.remove("modal-show");
+      modalWrite.classList.remove("modal-error");
     }
   }
 });
