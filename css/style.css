@@ -1977,6 +1977,7 @@
 
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1990,7 +1991,6 @@
 /*MODAL-WRITE*/
 
 .modal-write {
-  display: none;
   width: 620px;
   height: 430px;
   box-sizing: border-box;
@@ -2007,12 +2007,16 @@
 .write-input::placeholder {
   font-size: 13px;
   line-height: 24px;
-  padding-left: 11px;
 }
 
 .form-write {
   display: flex;
   flex-direction: column;
+}
+
+.form-write input,
+.form-write textarea {
+  padding-left: 11px;
 }
 
 .form-top {
@@ -2024,17 +2028,7 @@
 .form-top label,
 .from-top input {
   display: block;
-  /*  width: 50%;
-*/
 }
-
-/*.form-top-block {
-  width: 50%;
-}
-
-.form-top-block label {
-  display: block;
-}*/
 
 .form-top input {
   width: 220px;
@@ -2078,15 +2072,23 @@
   cursor: pointer;
 }
 
+.modal-close:active {
+  border: none;
+  outline: none;
+}
+
 /*MODAL-MAP*/
 
 .modal-map {
   width: 943px;
   height: 449px;
-  display: none;
 }
 
 .modal-map iframe {
   border: none;
   width: 100%;
+}
+
+.modal-show {
+  display: block;
 }
