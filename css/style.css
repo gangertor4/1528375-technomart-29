@@ -1553,6 +1553,14 @@
   font-family: var(--pt-sans);
   font-size: 17px;
   line-height: 18px;
+  -moz-appearance: textfield;
+}
+
+.min-price::-webkit-outer-spin-button,
+.min-price::-webkit-inner-spin-button,
+.max-price::-webkit-outer-spin-button,
+.max-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .dash {
@@ -1866,7 +1874,7 @@
 }
 
 .catalog-about {
-  width: 907px;
+  width: 945px;
   min-height: 261px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -1880,6 +1888,7 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  letter-spacing: -0.5px;
 }
 
 .catalog-about p {

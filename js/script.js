@@ -1,3 +1,34 @@
+let buyOpen = document.querySelectorAll(".button-buy");
+
+
+for (var i = 0; i < buyOpen.length; i++) {
+  let btns = buyOpen[i];
+  btns.addEventListener("click", modalShow);
+
+  function modalShow(evt) {
+    let modalBuy = document.querySelector(".modal-buy");
+    let modalBuyClose = modalBuy.querySelector(".modal-close");
+    evt.preventDefault();
+    modalBuy.classList.add("modal-show");
+
+    modalBuyClose.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      modalBuy.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+        if (modalBuy.classList.contains("modal-show")) {
+          evt.preventDefault();
+          modalBuy.classList.remove("modal-show");
+        }
+      }
+    });
+  }
+};
+
+
+
 let mapOpen = document.querySelector(".contacts-map");
 let modalMap = document.querySelector(".modal-map");
 let modalMapClose = modalMap.querySelector(".modal-close");
@@ -55,41 +86,6 @@ window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       modalWrite.classList.remove("modal-show");
       modalWrite.classList.remove("modal-error");
-    }
-  }
-});
-
-let buyOpen = document.querySelectorAll(".button-buy");
-
-
-for (var i = 0; i < buyOpen.length; i++) {
-  let btns = buyOpen[i];
-  btns.addEventListener("click", modalShow);
-
-  function modalShow(evt) {
-    let modalBuy = document.querySelector(".modal-buy");
-    let modalBuyClose = modalBuy.querySelector(".modal-close");
-    evt.preventDefault();
-    modalBuy.classList.add("modal-show")
-  }
-
-};
-
-// buyOpen.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   modalBuy.classList.add("modal-show")
-// });
-
-modalBuyClose.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  modalBuy.classList.remove("modal-show");
-});
-
-window.addEventListener("keydown", function(evt) {
-  if (evt.keyCode === 27) {
-    if (modalBuy.classList.contains("modal-show")) {
-      evt.preventDefault();
-      modalBuy.classList.remove("modal-show");
     }
   }
 });
