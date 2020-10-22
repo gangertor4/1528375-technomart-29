@@ -58,3 +58,38 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+let buyOpen = document.querySelectorAll(".button-buy");
+
+
+for (var i = 0; i < buyOpen.length; i++) {
+  let btns = buyOpen[i];
+  btns.addEventListener("click", modalShow);
+
+  function modalShow(evt) {
+    let modalBuy = document.querySelector(".modal-buy");
+    let modalBuyClose = modalBuy.querySelector(".modal-close");
+    evt.preventDefault();
+    modalBuy.classList.add("modal-show")
+  }
+
+};
+
+// buyOpen.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   modalBuy.classList.add("modal-show")
+// });
+
+modalBuyClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalBuy.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (modalBuy.classList.contains("modal-show")) {
+      evt.preventDefault();
+      modalBuy.classList.remove("modal-show");
+    }
+  }
+});

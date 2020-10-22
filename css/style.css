@@ -2251,3 +2251,70 @@
     transform: translateX(10px);
   }
 }
+
+/*MODAL-BUY*/
+.modal-buy {
+  width: 620px;
+  height: 282px;
+  background: linear-gradient(to bottom, var(--basic-white) 60%, var(--btn-container-grey) 60%, var(--btn-container-grey) 100%);
+  box-sizing: border-box;
+  padding-top: 73px;
+}
+
+.modal-buy h2 {
+  font-size: 24px;
+  line-height: 30px;
+  position: relative;
+  margin: 0;
+  margin-bottom: 104px;
+  text-align: center;
+
+}
+
+.modal-buy h2::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 66px;
+  height: 66px;
+  top: -15px;
+  left: 81px;
+}
+
+.modal-btns {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.modal-buy-btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
+.checkout-btn {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  padding-left: 47px;
+  padding-right: 46px;
+}
+
+.continue-btn {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  padding-left: 31px;
+  padding-right: 32px;
+  margin-left: 10px;
+}
+
+.continue-btn:hover,
+.continue-btn:focus {
+  color: var(--basic-red);
+}
