@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,9 +13,7 @@
   <header class="main-header">
     <div class="upper-header-container">
       <div class="upper-header">
-        <a class="header-logo" href="index.html">
-          <!--  <img src="img/logo-header.png" width="220" height="47" alt="логотип компании Техномарт"> -->
-        </a>
+        <a class="header-logo" href="index.html"></a>
         <form class="search">
           <input class="header-search" type="search" name="search" placeholder="Поиск">
           <button class="search-button" type="submit"></button>
@@ -83,7 +80,7 @@
           <h3>Фильтр:</h3>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="price-range">
-              <legend for="cost">Цена:</legend>
+              <legend>Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -99,7 +96,7 @@
                 </div>
               </div>
             </fieldset>
-            <legend>Производители:</legend>
+            <p>Производители:</p>
             <ul class="filter-brand">
               <li class="filter-option filter-checkbox">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="bosch" id="bosch" checked><label for="bosch" tabindex="0">BOSCH</label>
@@ -114,10 +111,10 @@
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="dewalt" id="dewalt"><label for="dewalt" tabindex="0">Dewalt</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="hitachi" id="hitachi"><label for="hitachi" tabindex="0">Hitachi</label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="hitachi" id="hitachi" disabled><label for="hitachi" tabindex="0">Hitachi</label>
               </li>
             </ul>
-            <legend>Питание:</legend>
+            <p>Питание:</p>
             <ul class="power-filter">
               <li class="filter-option filter-radio">
                 <input class="visually-hidden filter-input-radio" type="radio" name="power" id="accum" checked><label for="accum" tabindex="0">Аккумуляторные</label>
@@ -279,7 +276,6 @@
           <a href="blank.html">Следующая</a>
         </li>
       </ul>
-      </section>
     </div>
     <section class="about-container">
       <div class="catalog-about">
