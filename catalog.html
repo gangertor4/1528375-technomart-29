@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="utf-8">
@@ -61,7 +61,7 @@
       <ul class="main-breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html">
-            <img src="img/icon-home.svg" alt="Главная">
+            <img src="img/icon-home.svg" alt="Главная" width="14" height="12">
           </a>
         </li>
         <li class="breadcrumbs-item">
@@ -96,33 +96,37 @@
                 </div>
               </div>
             </fieldset>
-            <p>Производители:</p>
-            <ul class="filter-brand">
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="bosch" id="bosch" checked><label for="bosch" tabindex="0">BOSCH</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="interskol" id="interskol"><label for="interskol" tabindex="0">Интерскол</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="makita" id="makita" checked><label for="makita" tabindex="0">Makita</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="dewalt" id="dewalt"><label for="dewalt" tabindex="0">Dewalt</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="hitachi" id="hitachi" disabled><label for="hitachi" tabindex="0">Hitachi</label>
-              </li>
-            </ul>
-            <p>Питание:</p>
-            <ul class="power-filter">
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio" type="radio" name="power" id="accum" checked><label for="accum" tabindex="0">Аккумуляторные</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio" type="radio" name="power" id="cord"><label for="cord" tabindex="0">Сетевые</label>
-              </li>
-            </ul>
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul class="filter-brand">
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="bosch" id="bosch" checked><label for="bosch" tabindex="0">BOSCH</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="interskol" id="interskol"><label for="interskol" tabindex="0">Интерскол</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="makita" id="makita" checked><label for="makita" tabindex="0">Makita</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="dewalt" id="dewalt"><label for="dewalt" tabindex="0">Dewalt</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="firm" value="hitachi" id="hitachi" disabled><label for="hitachi" tabindex="0">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul class="power-filter">
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="power" id="accum" checked><label for="accum" tabindex="0">Аккумуляторные</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="power" id="cord"><label for="cord" tabindex="0">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
             <button type="submit">Показать</button>
           </form>
         </section>
