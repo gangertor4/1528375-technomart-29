@@ -15,6 +15,7 @@
       <div class="upper-header">
         <a class="header-logo" href="index.html"></a>
         <form class="search">
+          <lable for="search" class="visually-hidden"></lable>
           <input class="header-search" type="search" name="search" placeholder="Поиск">
           <button class="search-button" type="submit"></button>
         </form>
@@ -90,8 +91,10 @@
                   <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
                 <div class="price-controls">
+                  <label for="min-price" class="visually-hidden"></label>
                   <input class="min-price" type="number" name="min-price" value="0">
                   <div class="dash"></div>
+                  <label for="max-price" class="visually-hidden"></label>
                   <input class="max-price" type="number" name="max-price" value="30000">
                 </div>
               </div>
@@ -145,10 +148,10 @@
           </ul>
           <ul class="catalog-sort-updown">
             <li class="catalog-sort-up">
-              <a href="blank.html">▲</a>
+              <a href="blank.html" aria-label="По возрастанию">▲</a>
             </li>
             <li class="catalog-sort-down">
-              <a href="blank.html">▼</a>
+              <a href="blank.html" aria-label="По убыванию">▼</a>
             </li>
           </ul>
         </section>
