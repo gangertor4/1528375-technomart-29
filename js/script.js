@@ -60,11 +60,15 @@
   let enterLogin = modalWrite.querySelector(".write-login");
   let enterEmail = modalWrite.querySelector(".write-email");
 
+
+
   writeOpen.addEventListener("click", function(evt) {
     evt.preventDefault();
     modalWrite.classList.add("modal-show");
     enterLogin.focus();
   });
+
+
 
   formWrite.addEventListener("submit", function(evt) {
     evt.preventDefault();
